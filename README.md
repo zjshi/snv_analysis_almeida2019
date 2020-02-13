@@ -1,5 +1,13 @@
+# About this repo  
+This repository hosts the code for SNV analysis performed in this paper:  
+[A unified sequence catalogue of over 280,000 genomes obtained from the human gut microbiome](https://www.biorxiv.org/content/10.1101/762682v1)  
+Please consider cite this paper if you find this repository helpful:  
+> A unified sequence catalogue of over 280,000 genomes obtained from the human gut microbiome  
+> Alexandre Almeida, Stephen Nayfach, Miguel Boland, Francesco Strozzi, Martin Beracochea, Zhou Jason Shi, Katherine S. Pollard, Donovan H. Parks, Philip Hugenholtz, Nicola Segata, Nikos C. Kyrpides, Robert D. Finn  
+> bioRxiv 762682; doi: https://doi.org/10.1101/762682  
+
 ## Running the code for SNV analysis requires the following dependencies intalled in local environment:  
-* python2 and 3  
+* Python  
 * numpy  
 * MUMmer4  
 
@@ -39,17 +47,17 @@
 ### Generate SNV catalog:  
 `bash run_all_snv_catalog.sh`  
 
-## Output files:  
-### SNV catalog file:  
+### Output files:  
+#### SNV catalog file:  
 * GUT_GENOME000067.catalog.noAuto.wtRef.tsv  
-### SNV binned based on continent origin:  
+#### SNV binned based on continent origin:  
 * GUT_GENOME000067.continentBin.tsv  
 
 ### Generate pairwise SNV profile:  
 `bash run_all_pairwise_analysis.sh`  
 
-## Output files:  
-###Pairwise alignment summary:  
+### Output files:  
+#### Pairwise alignment summary:  
 * GUT_GENOME000067.align_stats.tsv  
-### Pairwise SNP count:  
+#### Pairwise SNP count:  
 * GUT_GENOME000067.snp_count.tsv  
